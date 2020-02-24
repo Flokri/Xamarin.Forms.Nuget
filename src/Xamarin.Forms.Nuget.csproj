@@ -50,6 +50,11 @@
     <Compile Include="shared\**\*.cs" />
     <None Include="readme.txt" pack="true" PackagePath="." />
     
+    <Folder Include="ios\" />
+    <Folder Include="android\" />
+    <Folder Include="standard\" />
+    <Folder Include="shared\" />
+    
     <PackageReference Include="Xamarin.Forms" Version="4.4.0.991640" />
   </ItemGroup>
 
