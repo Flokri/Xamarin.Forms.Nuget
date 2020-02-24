@@ -46,16 +46,11 @@
   </PropertyGroup>
 
   <!-- Create the item groups for the different platforms -->
-  <ItemGroup>
-    <!-- Include a folder for each platform -->
-    <Folder Include="ios\" />
-    <Folder Include="android\" />
-    <Folder Include="standard\" />
-    <Folder Include="shared\" />
-    
+  <ItemGroup>    
     <Compile Include="shared\**\*.cs" />
     <None Include="readme.txt" pack="true" PackagePath="." />
-    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
+    
+    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991640" />
   </ItemGroup>
 
   <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">
@@ -104,5 +99,4 @@
     <PackageReference Include="Tizen.NET" Version="4.0.0" />
   </ItemGroup>
   -->
-  
 </Project>
